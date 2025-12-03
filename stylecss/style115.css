@@ -1,0 +1,13 @@
+#share-area{
+    list-style-type: none;
+    border: 1px solid red;
+    padding: 15px;
+    width: 270px;
+}
+#share-area li{
+    display: inline;
+}
+#share-area li img{
+    width: 64px;
+    height: 64px;
+}

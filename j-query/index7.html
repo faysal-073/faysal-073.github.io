@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <script src="js/jquery-1.9.0.min.js"></script>
+</head>
+<body>
+    <script>
+ $(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");
+    div.animate({height:'200px',opacity:'0.4'},"slow");
+    div.animate({width:'100px',opacity:'0.6'},"slow");
+    div.animate({height:'25000px',opacity:'0.4'},"slow");
+    div.animate({width:'200px',opacity:'0.4'},"slow");
+    div.animate({left: '100px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+  });
+});
+    </script>
+    <button>Start animate</button>
+
+    <div style="background:#ee0606; height: 100px; width:250px;position: absolute;">Choyon</div>
+</body>
+</html>
+
+

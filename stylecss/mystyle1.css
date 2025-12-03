@@ -1,0 +1,43 @@
+.floatleft{float: left;}
+.floatright{float: right;}
+
+.image32 img{ width: 70px;height: 87px; margin-top: 1px; margin-left: 1px; }
+.menu{min-height: 90px; width: 1247px; background: aquamarine; }
+.menu ul{padding-left: 10px; padding-top: 10px;}
+.menu ul li{list-style-type: none; float: left; position: relative;padding-right: 20px; display: block; text-align: center; }
+
+.menu ul li a{text-decoration:none; padding:25px 20px; display: block; color:black; -webkit-transition: all 0.3s ease; transition: all 0.3s ease;}
+.menu ul li a:hover{color: rgb(235, 12, 9); left: 88px; top: -30px;}
+.menu ul li ul{position: absolute; left: -9999px; background-color: white;}
+.menu ul li:hover ul{left: 0px; top: 50px;}
+.menu ul li ul li{position: relative; width: 235px; height: 50px;}
+.menu ul li ul li ul{position: absolute; left: -9999px; display: none;float: left;}
+.menu ul li ul li:hover ul{left: 80px; top:0px; display:block;}
+
+
+.Notice{background: rgb(1, 35, 23); padding: 1px 0px; color: rgb(16, 236, 119); } 
+.Notice ul{list-style-type: none; text-decoration-color: brown;}
+.Notice ul li a{}
+.under-img-about{  background-image: url("imgs/diu short image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    display: block;}
+.whitelogo img{width: 100px;  padding-left: 200px;}
+.letter p{width: 558px; height: 200px; padding-left:450px ;}
+.mission{width: 624px; text-align: center; height: 300px; background-color: rgb(211, 251, 238);}
+.mission{}
+.vission{width: 622px; text-align: center; height: 300px; background-color: rgb(211, 251, 238);}
+.vission{}
+.faculty h2{ background-color: green; text-align:; padding-bottom:15px ;}
+
+
+ .footup img{ width: 100px; margin-left: 1px; margin-top: 1px; padding-right:120px;}
+ .last1{ width: 340px; height: 430px; padding-right: 7px;}
+ .last2{width: 340px; height: 430px; padding-right: 7px;}
+ .last3{width: 325px; height: 430px;padding-right: 7px;}
+ .last1 p,.last2 p,.last3 p{border-bottom: 1px solid black;}
+.container5{background-color: blue; display: inline-block;}
+.lastfooter{text-align: center; background: rgb(18, 18, 45); color: white; padding: 10px 10px;width: 1227px;}

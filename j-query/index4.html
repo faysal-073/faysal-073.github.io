@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery hide and show</title>
+    <script src="js/jquery-1.9.0.min.js"></script>
+</head>
+<body>
+        <script>
+            $(document).ready(function(){
+                    $("#hide").click(function(){
+                        $("p").hide(2000);
+                    });
+                        $("#show").click(function(){
+                        $("p").show(1000);
+                    });
+            });
+
+
+
+
+        </script>
+    <p>this is our first funtion</p>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+</body>
+</html>
+
+
+

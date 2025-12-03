@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery callback</title>
+    <script src="js/jquery-1.9.0.min.js"></script>
+</head>
+<body>
+        <script>
+            $(document).ready(function(){
+                    $("#hide").click(function(){
+                        $("p").hide("slow",function(){
+                            alert("now hidden p");
+                        });
+
+                    });
+            });
+        </script>
+     <button id="hide">hide</button>
+    <p>this is our first funtion</p>
+</body>
+</html>
+
+
+

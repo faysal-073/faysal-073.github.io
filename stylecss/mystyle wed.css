@@ -1,0 +1,51 @@
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 30px 0px 0px 30px;
+  float: left;
+  margin: 0px 15px 15px 0px;
+}
+
+.Tan1 {
+  border: 5px solid red;
+  border-radius: 30px;
+}
+.containe1 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.contain3 {
+  border: 5px solid rgb(16, 149, 16);
+  height: 120px;
+  width: 200px;
+  border-radius: 100px 100px 0px 0px;
+}
+.contain4 {
+  border: 5px solid rgb(16, 149, 16);
+  height: 120px;
+  width: 200px;
+  border-radius: 20px 20px 20px 20px;
+}
+.Bullet {
+  border: 5px solid palevioletred;
+  height: 120px;
+  width: 200px;
+  border-radius: 0px 60px 60px 0px;
+}
+.Leaf{
+    border: 5px solid palevioletred;
+  height: 120px;
+  width: 200px;
+  border-radius: 0px 120px 0px 120px;
+}
+
+.contain3, .contain4, .Bullet, .Leaf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size:  24px;
+}

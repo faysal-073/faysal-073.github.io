@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       header{
+    width: 90%;
+    padding: 15px 5%;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.logo img{
+    width: 80px;
+    border-radius: 80%;
+}
+
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size:18px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.nav ul li a:hover
+{
+    background: #ee6348;
+    color: #fff;
+}
+
+
+.menu-btn{
+    display: none;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px){
+
+    .menu-btn{
+        display: block;
+        color: #4c52ff;
+    }
+
+    .nav{
+        position: absolute;
+        top: 10px;
+        right: -100%;
+        width: 40%;
+        background: white;
+        padding: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        border-radius: 15px;
+        transition: 0.3s ease;
+    }
+
+    .nav.active{
+        right: 20px;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        gap: 15px;
+        text-align: right;
+    }
+
+    .nav ul li a{
+        display: block;
+        padding: 10px 15px;
+        font-size:80px;
+    }
+}
+
+
+@media (max-width: 48px){
+    .nav{
+        width: 80%;
+    }
+}
+.nav ul li button{
+    padding: 8px 12px;
+    background: #8c91f6;
+    
+    cursor: pointer;
+
+       text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.nav ul li button:hover{ 
+       
+    }
+
+
+
+
+        .hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 80px;
+    min-height: 100vh;
+    background: url(img/Daffodil\ pic.jpeg) no-repeat center center/cover;
+}
+
+.hero-text{
+    width: 50%;
+}
+
+.hero-text h1{
+    font-size: 50px;
+    color: #021335;
+    margin-bottom: 18px;
+}
+.hero-text h3{
+    font-size: 30px;
+    color: #f91504;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.hero-text button{
+    padding: 14px 30px;
+    background: #7f97ff;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover{
+    background: #5d75d9;
+}
+.hero-img img{
+    width: 520px;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+
+.wings{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    gap: 30px;
+}
+
+.card{
+    width: 32%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card img{
+    width: 90px;
+    margin-bottom: 20px;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h2{
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.card p{
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+
+.footer-section{
+    background: #f7f7fb;
+    padding: 70px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 23%;
+}
+.box h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.box p{
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.box ul{
+    list-style: none;
+}
+
+.box ul li{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-icons i{
+    font-size: 22px;
+    margin-right: 12px;
+    background: #fff;
+    padding: 8px 10px;
+    border-radius: 8px;
+cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover{
+    background: #040474;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 992px){
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text, .hero-img{
+        width: 100%;
+    }
+    .wings{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .footer-section{
+   padding: 50px 30px;
+    }
+    .box{
+        width: 48%;
+    }
+}
+
+
+@media (max-width: 900px){
+    .nav{
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 220px;
+        background: #bd0606;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        padding: 20px 0;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav ul li{
+        padding: 12px 20px;
+  }
+
+    .menu-icon{
+        display: block;
+    }
+}
+
+
+@media (max-width: 600px){
+    .box{
+        width: 100%;
+    }
+
+    header{
+        padding: 0 20px;
+    }
+
+    .hero{
+        padding: 120px 25px;
+    }
+
+    .hero-text h1{
+        font-size: 36px;
+    }
+
+    .hero-text h3{
+        font-size: 22px;
+    }
+
+    .hero-img img{
+        width: 350px;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+         <header>
+    <div class="logo">
+        <img src="img/cis logo.png" alt="Logo">
+    </div>
+
+    <nav class="nav">
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Members</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="login.html"><button>login</button></a></li>
+            <li><a href="Registration.html"><button>Registration</button></a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="menu-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</header>
+
+
+
+     <section class="hero">
+        <div class="hero-text">
+            <h3>Hello Everyone</h3>
+            <h1>Welcome to the CIS Club</h1>
+            <h3>DIU Computer & Information System Club</h3>
+
+            <p>
+                At DIU CIS Club, we foster a community of innovators driven by programming,
+                leadership, and collaboration. Our motto <b>"Code. Lead. Inspire."</b> reflects the
+                spirit we carry forward.
+            </p>
+
+            <button>Join Us</button>
+        </div>
+
+        <div class="hero-img">
+ <img src="img/cis.jpg" alt="">
+        </div>
+    </section>
+
+
+  
+    <section class="wings">
+        <div class="card">
+            <img src="img/wings2.png">
+            <h2>Programming Wing</h2>
+            <p>
+                Enhances students' coding skills through workshops, contests, and collaborative learning.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="img/wings2.png">
+            <h2>Cultural Wing</h2>
+            <p>
+                Celebrates creativity and diversity by organizing cultural events, performances, and festivals.
+            </p>       </div>
+
+        <div class="card">
+            <img src="img/wings2.png">
+            <h2>Sports Wing</h2>
+            <p>
+                Promotes teamwork and sportsmanship with indoor & outdoor tournaments.
+</p>
+        </div>
+
+    </section>
+
+
+   
+    <footer class="footer-section">
+
+        <div class="box about">
+            <h2>About Us</h2>
+            <p>
+                DIU Clubs make campus life vibrant and inclusive. From academics to creativity and sports,
+                there is something here for everyone.
+            </p>
+
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Get in Touch</h2>
+  <ul>
+                <li><i class="fa-solid fa-envelope"></i> Contact</li>
+                <li><i class="fa-solid fa-handshake"></i> Meet With Us</li>
+                <li><i class="fa-solid fa-shield-halved"></i> Privacy</li>
+                <li><i class="fa-solid fa-location-dot"></i> Location Map</li>
+                <li><i class="fa-solid fa-comment-dots"></i> Testimonial</li>
+                <li><i class="fa-solid fa-file-contract"></i> Rules</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Facilities</h2>
+            <ul>
+                <li><i class="fa-solid fa-building"></i> Hall Facilities</li>
+                <li><i class="fa-solid fa-bus"></i> Transport</li>
+                <li><i class="fa-solid fa-flask"></i> Lab Facilities</li>
+                <li><i class="fa-solid fa-dumbbell"></i> Gym</li>
+                <li><i class="fa-solid fa-hospital"></i> Medical</li>
+                <li><i class="fa-solid fa-briefcase"></i> Job Portal</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>More Resources</h2>
+            <ul>
+                <li><i class="fa-solid fa-computer"></i> PC Purchase Scheme</li>
+                <li><i class="fa-solid fa-users"></i> Valued Employers</li>
+   <li><i class="fa-solid fa-medal"></i> Extra Curriculars</li>
+                <li><i class="fa-solid fa-school"></i> DIU Clubs</li>
+                <li><i class="fa-solid fa-shield"></i> Safety & Security</li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+
+.floatleft{float: left;}
+.floatright{float: right;}
+
+.image32 img{ width: 70px;height: 87px; margin-top: 1px; margin-left: 1px;}
+.menu{min-height: 90px; width: 1247px; background: aquamarine; }
+.menu ul{padding-left: 10px; padding-top: 10px;}
+.menu ul li{list-style-type: none; float: left; position: relative;padding-right: 20px; display: block; text-align: center; }
+
+.menu ul li a{text-decoration:none; padding:25px 20px; display: block; color:black; -webkit-transition: all 0.3s ease; transition: all 0.3s ease;}
+.menu ul li a:hover{color: rgb(235, 12, 9); left: 88px; top: -30px;}
+.menu ul li ul{position: absolute; left: -9999px; background-color: white;}
+.menu ul li:hover ul{left: 0px; top: 50px;}
+.menu ul li ul li{position: relative; width: 235px; height: 50px;}
+.menu ul li ul li ul{position: absolute; left: -9999px; display: none;float: left;}
+.menu ul li ul li:hover ul{left: 255px; top:0px; display:block;}
+
+.menu ul li ul li ul li a{text-decoration: none; padding-left: 25px; text-align: center; display:block;}
+.menu ul li ul li ul li ul li ul li ul li .club a{text-decoration: none; padding-left: 25px; text-align: center; display:block;}
+
+.menu2 {width: 1034px; height: 45px; background: aquamarine; padding-top:1px ; padding-bottom: 0px;}
+.menu2 ul{}
+.menu2 ul li{list-style-type: none; float: left;  margin-top: -20px; margin-left: -40px;}
+.menu2 ul li a{text-decoration:none; padding-top:15px 10px; display:block; color: black; transition: all 0.3s;}
+.under-img{background: url(imgs) no-repeat;height:620px; width:1240px; display: block;
+    background: url(imgs/diu\ image.jpeg) no-repeat;}
+.Notice{background: rgb(1, 35, 23); padding: 1px 0px; color: rgb(16, 236, 119); } 
+.Notice ul{list-style-type: none; text-decoration-color: brown;}
+.Notice ul li a{}
+
+.admission{width: 312px; height: 280px; background-color: blue; float: left; text-align: center;}
+.admission:hover{}
+.admission img, .prog img, .tuition img, .scholar img {width: 32px; height: 32px; padding-top: 25px;}
+.admission h2,.prog h2,.tuition h2,.scholar h2{padding-bottom: 10px;}
+.prog{width: 308px; height: 280px; background-color: aquamarine; float: left;text-align: center;}
+.prog:hover{}
+.tuition{width: 310px; height: 280px; background-color: blue; float: left;text-align: center;}
+.tuition:hover{}
+.scholar{width: 310px; height: 280px; background-color: aquamarine; float: left;text-align: center;}
+.scholar:hover{}
+.count{float: left; background-color: aliceblue; width:614px; height: 351px; display: block; }
+.butt {padding: 10px 20px; background: #007BFF; color: #fff; text-decoration: none; border-radius: 5px;}
+.butt:hover{background-color: red; color: #000;}
+.under-img{float:right; height: 550px; background-size: cover;
+background-position: center;
+width: 100%;}
+.digg1{background-color: white; width: 415px; height: 420px; }
+.digg2{background-color: white; width: 415px; height: 420px;}
+.digg3{background-color: white; width: 410px; height: 420px;}
+.foot{text-align: center; background: rgb(18, 18, 45); color: white; padding: 10px 10px;}
+.foot p{padding-top:415px;}
+
+.hmp1{background-color: rgb(247, 178, 31); color: black; width: 410px;height: 430px; padding-top: 50px; padding-bottom: 100px; display: block;padding-right: 7.5px;}
+.hmp2{background-color: rgb(247, 178, 31); color: black; width: 408px;height: 430px; padding-top: 50px; padding-bottom: 100px; display: block;padding-right: 7.5px; }
+.hmp3{background-color: rgb(247, 178, 31); color: black; width: 406px;height: 430px; padding-top: 50px; padding-bottom: 100px; display: block; }
+
+.hmp img{padding-right: 25px;}
+.hmp1 p,.hmp2 p,.hmp3 p{border-bottom: 1px solid black;}
+.attention{background-color: #1cb4b7;display: fixed;}
+.attention p{text-align: center; padding-bottom: 50px; ;}
+
+.footup img{ width: 100px; margin-left: 1px; margin-top: 1px; padding-right:120px;}
+.last1{ width: 340px; height: 430px; padding-right: 7px;}
+.last2{width: 332px; height: 430px; padding-right: 7px;}
+.last3{width: 325px; height: 430px;padding-right: 7px;}
+.last1 p,.last2 p,.last3 p{border-bottom: 1px solid black;}
+.container5{background-color: blue; display: inline-block;}
+.container4{background-color: blue; display: inline-block;}
+.lastfooter{text-align: center; background: rgb(18, 18, 45); color: white; padding: 10px 10px;width: 1227px;}
+
+
+

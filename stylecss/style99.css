@@ -1,0 +1,262 @@
+*{ margin: 0; padding: 0;}
+body{
+    background-color: #be5a09ad;
+    margin: 20px auto;
+}
+.main-werp{
+    width: 100%;
+}
+.werp{
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+}
+.header-bg{
+    background-color: orangered;
+    border-bottom: 5px solid rgba(200, 222, 8, 0.947);
+
+}
+
+#header{
+    background-color: rgb(251, 119, 11);
+    padding: 15px;
+    border-left:2px solid rgba(200, 222, 8, 0.947);
+    border-right:2px solid rgba(200, 222, 8, 0.947);
+}
+#header h2{ 
+    color: white;
+}
+#header p{
+    color: black;
+}
+.nav-bg{
+    background-color:#c55151 ;
+    border-bottom: 1px solid rgba(200, 222, 8, 0.947);
+}
+#nav{
+    background-color: #fff;
+    height: 38px;
+    border-left:2px solid rgb(200, 222, 8, 0.947) ;
+    border-right:2px solid rgba(200, 222, 8, 0.947) ;
+}
+#nav ul{
+    background-color: #fff;
+    list-style-type: none;
+}
+#nav ul li{
+        float: left;
+        border-right: 1px solid rgba(200, 222, 8, 0.947);
+}
+#nav ul li:last-child{
+    border: none;
+}
+#nav ul li a{
+     text-decoration: none;
+    color: rgba(200, 222, 8, 0.947) ;
+    display: block;
+    padding: 10px 20px;
+    font-family: arial;
+    transition: 0.2s all ease;
+}
+#nav ul li a:hover{
+    color:#fff;
+    background-color:  rgba(200, 222, 8, 0.947);
+
+}
+#nav ul li{ position: relative;}
+#nav ul li ul{
+    position: absolute;
+    left: -99999px;
+}
+#nav ul li:hover ul{
+    left: 0;
+}
+#nav ul li ul li :first-child{
+    border-top: 2px solid  rgba(200, 222, 8, 0.947);
+    
+}
+#nav ul li ul li{
+    float:none;
+    border-right: none;
+    
+    border-bottom:1px solid  rgba(200, 222, 8, 0.947);
+    width: 80px;
+    position: relative;
+}  
+#nav ul li ul li ul{
+    position: absolute;
+    top: -999999px;
+}
+#nav ul li ul li:hover ul{
+    top: -1px;
+    left: 80px;
+}
+#nav ul li ul li ul li{
+    border-left: 1px solid  rgba(200, 222, 8, 0.947) ;
+}
+#nav ul li ul li ul li :first-child{
+    border-top: none;
+}
+#nav ul li ul li ul li :last-child{
+    border-left:1px solid  rgba(200, 222, 8, 0.947) ;
+}
+.content-bg{
+    background-color:rgb(228, 134, 19) ;
+}
+#content-wrapper{
+    background-color: #fff;
+    border-top: 5px solid  rgba(200, 222, 8, 0.947);
+    padding: 10px;
+    overflow: hidden;
+    border-left:2px solid #f7f308;
+    border-right:2px solid #f8f006;
+}
+#content{
+    width: 620px;
+    margin-right: 20px;
+    float: left;
+}
+#content h2{
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 23px;
+}
+#content h3{
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#content article{
+    color:  rgba(200, 222, 8, 0.947);
+    font-family: arial;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding: 10px;
+}
+#content p{
+    margin: 15px 0;
+    font-size: 15px;
+}
+#content img{
+    width: 450px;
+}
+#content figure{
+    width: 450px;
+    padding: 10px;
+    background-color: #ddd;
+    margin: 0 auto;
+    display: block;
+}
+#content figcaption{
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+    color: green;
+}
+
+
+#slidber{
+    width: 290px;
+    float: left;
+
+}
+#slidber ul{
+   
+}
+#slidber ul li {
+    border-bottom: 1px solid red;
+    margin-bottom: 3px;
+}
+#slidber ul li :last-child{
+    border-bottom: none;
+}
+#slidber ul li a{
+    text-decoration: none;
+    color: rgba(200, 222, 8, 0.947) ;
+    padding: 3px;
+    display: block;
+
+
+}
+#slidber h2{
+    color:  rgba(200, 222, 8, 0.947);
+}
+.footer-bg{
+    background-color: #07d68e;
+}
+#footer{
+    background-color:  rgba(200, 222, 8, 0.947);
+    padding: 10px;
+    text-align: center;
+    border-left:2px solid #f7f308;
+    border-right:2px solid #f8f006;
+    
+}
+#footer p{
+    color: #000;
+    height: 20px;
+   
+}
+#main-artical-single{
+    margin-bottom:25px ;
+    border-bottom:2px solid  rgba(200, 222, 8, 0.947);
+    overflow: hidden;
+
+}
+#img-werp img{
+    width: 75px;
+    height: 75px;
+    background-color: #0fa1f0;
+    border:1px solid #8f2727;
+    padding:3px ;
+    margin-right: 10px;
+    float: left;
+
+}
+#img-werp p{
+     float: left;
+     width: 500px;
+     margin-top: 0;
+}
+#img-werp{
+    margin-top: 10px;
+}
+#main-aside{
+    border-bottom: 1px solid red;
+    margin-bottom: 25px;
+    overflow: hidden;
+    padding-bottom: 5px;
+
+}
+#main aside ul li{
+    padding: 10px;
+}
+#main aside h2{
+    margin-bottom:10px ;
+}
+
+
+
+#share-area{
+    list-style-type: none;
+    
+    padding: 15px;
+    position: fixed;
+    right: 0;
+    top: 25%;
+   background: rgb(228, 134, 19);
+   border-radius: 25px 25px 25px 25px;
+   
+}
+#share-area li{
+   float: none;
+}
+#share-area li img{
+    width: 64px;
+    height: 64px;
+    background: rgb(228, 134, 19);
+}
