@@ -3,33 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-    <script src="Registration .js"></script>
+    <title>Perfect Registration Form</title>
+    <script src="js/Registration .js" defer></script>
+    <style>
+
+        body {
+    background: #4c1d95;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4c1d95;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #4c1d95;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background: #4c1d95;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #5b21b6;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin: 3px 0 0 0;
+}
+
+.success {
+    color: green;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+    </style>
 </head>
-<body style="text-align:center;">
 
-    <h2>User Registration Form</h2>
+<body>
 
-    <form onsubmit="return registerUser()">
+    <div class="container">
+        <h2>User Registration</h2>
 
-        <label>Full Name:</label><br>
-        <input type="text" id="fullname"><br><br>
+        <form id="regForm">
 
-        <label>Email:</label><br>
-        <input type="text" id="email"><br><br>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="fullname">
+                <p class="error" id="fullnameError"></p>
+            </div>
 
-        <label>Username:</label><br>
-        <input type="text" id="username"><br><br>
+            <div class="input-group">
+                <label>Email</label>
+                <input type="text" id="email">
+                <p class="error" id="emailError"></p>
+            </div>
 
-        <label>Password:</label><br>
-        <input type="password" id="password"><br><br>
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" id="username">
+                <p class="error" id="usernameError"></p>
+            </div>
 
-        <label>Confirm Password:</label><br>
-        <input type="password" id="confirmPassword"><br><br>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password">
+                <p class="error" id="passwordError"></p>
+            </div>
 
-        <input type="submit" value="Register">
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword">
+                <p class="error" id="confirmPasswordError"></p>
+            </div>
 
-    </form>
+            <button type="submit" class="btn">Register</button>
+
+            <p id="success" class="success"></p>
+
+        </form>
+    </div>
 
 </body>
 </html>

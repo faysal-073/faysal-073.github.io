@@ -3,34 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Login Validation</title>
-    <script src="app.js"></script>
+    <title>Perfect Login Form</title>
+
+    <link rel="" href="">
+    <script src="js/app.js" defer></script>
+    <style>
+        body {
+    background: #6d28d9;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.login-container {
+    background: white;
+    padding: 30px;
+    width: 340px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 15px;
+    color: #4c1d95;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 2px solid #ddd;
+    font-size: 15px;
+}
+
+.input-group input:focus {
+    border-color: #6d28d9;
+    outline: none;
+}
+
+.btn {
+    background: #6d28d9;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #5b21b6;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin: 5px 0 0 0;
+}
+
+.success {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+    </style>
 </head>
 
-<body style="background-color: blueviolet; text-align: center;">
+<body>
 
-    <h1>User Login Validation</h1>
+    <div class="login-container">
+        <h2>Login</h2>
 
-    <form name="form1" onsubmit="return formValidator()">
-        <table style="margin: auto; border: 2px solid rgb(0, 235, 137); padding: 10px;">
+        <form id="loginForm">
 
-            <tr>
-                <td>Username:</td>
-                <td><input type="text" name="uname" id="uname"></td>
-            </tr>
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" id="username">
+                <p class="error" id="userError"></p>
+            </div>
 
-            <tr>
-                <td>Password:</td>
-                <td><input type="password" name="pwd" id="pwd"></td>
-            </tr>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password">
+                <p class="error" id="passError"></p>
+            </div>
 
-            <tr>
-                <td><input type="submit" value="Submit"></td>
-                <td><input type="reset" value="Cancel"></td>
-            </tr>
+            <button type="submit" class="btn">Login</button>
 
-        </table>
-    </form>
+            <p id="success" class="success"></p>
+
+        </form>
+    </div>
 
 </body>
 </html>

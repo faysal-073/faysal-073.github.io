@@ -1,40 +1,41 @@
-function formValidator() {
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-    let username = document.getElementById("uname");
-    let password = document.getElementById("pwd");
+    let user = document.getElementById("username");
+    let pass = document.getElementById("password");
 
-    // Check empty fields
-    if (isEmpty(username) || isEmpty(password)) {
-        alert("Please fill in all fields!");
-        username.focus();
-        return false;
+    let userError = document.getElementById("userError");
+    let passError = document.getElementById("passError");
+    let success = document.getElementById("success");
+
+    userError.textContent = "";
+    passError.textContent = "";
+    success.textContent = "";
+
+    let valid = true;
+
+   
+    if (user.value.trim() === "") {
+        userError.textContent = "Username is required!";
+        valid = false;
+    } else if (!/^[A-Za-z]+$/.test(user.value)) {
+        userError.textContent = "Username must contain only letters!";
+        valid = false;
     }
 
-    // Check only alphabet letters
-    if (!isAlphabet(username)) {
-        alert("Username must contain only letters!");
-        username.focus();
-        return false;
+    
+    if (pass.value.trim() === "") {
+        passError.textContent = "Password is required!";
+        valid = false;
+    } else if (pass.value.length < 6) {
+        passError.textContent = "Password must be at least 6 characters!";
+        valid = false;
     }
 
-    // Password length check
-    if (password.value.length < 6) {
-        alert("Password must be at least 6 characters long!");
-        password.focus();
-        return false;
+    if (valid) {
+        success.textContent = "Login Successful!";
+        success.style.color = "green";
+
+       
     }
-
-    alert("Validation successful!");
-    return true;
-}
-
-// Check empty field
-function isEmpty(elem) {
-    return elem.value.trim().length === 0;
-}
-
-// Check alphabet characters only
-function isAlphabet(elem) {
-    var alphaExp = /^[A-Za-z]+$/;
-    return elem.value.match(alphaExp);
-}
+});

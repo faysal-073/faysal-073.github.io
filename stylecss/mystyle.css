@@ -3,7 +3,7 @@
 .floatright{float: right;}
 
 .image32 img{ width: 70px;height: 87px; margin-top: 1px; margin-left: 1px;}
-.menu{min-height: 90px; width: 1247px; background: aquamarine; }
+.menu{min-height: 90px; width: 1248px; background: aquamarine; }
 .menu ul{padding-left: 10px; padding-top: 10px;}
 .menu ul li{list-style-type: none; float: left; position: relative;padding-right: 20px; display: block; text-align: center; }
 
@@ -28,15 +28,15 @@
 .Notice ul{list-style-type: none; text-decoration-color: brown;}
 .Notice ul li a{}
 
-.admission{width: 312px; height: 280px; background-color: blue; float: left; text-align: center;}
+.admission{width: 310px; height: 280px; background-color: blue; float: left; text-align: center;}
 .admission:hover{}
 .admission img, .prog img, .tuition img, .scholar img {width: 32px; height: 32px; padding-top: 25px;}
 .admission h2,.prog h2,.tuition h2,.scholar h2{padding-bottom: 10px;}
-.prog{width: 308px; height: 280px; background-color: aquamarine; float: left;text-align: center;}
+.prog{width: 310px; height: 280px; background-color: aquamarine; float: left;text-align: center;}
 .prog:hover{}
-.tuition{width: 310px; height: 280px; background-color: blue; float: left;text-align: center;}
+.tuition{width: 315px; height: 280px; background-color: blue; float: left;text-align: center;}
 .tuition:hover{}
-.scholar{width: 310px; height: 280px; background-color: aquamarine; float: left;text-align: center;}
+.scholar{width: 312px; height: 280px; background-color: aquamarine; float: left;text-align: center;}
 .scholar:hover{}
 .count{float: left; background-color: aliceblue; width:614px; height: 351px; display: block; }
 .butt {padding: 10px 20px; background: #007BFF; color: #fff; text-decoration: none; border-radius: 5px;}
@@ -45,14 +45,14 @@
 background-position: center;
 width: 100%;}
 .digg1{background-color: white; width: 415px; height: 420px; }
-.digg2{background-color: white; width: 415px; height: 420px;}
-.digg3{background-color: white; width: 410px; height: 420px;}
+.digg2{background-color: white; width: 417px; height: 420px;}
+.digg3{background-color: white; width: 416px; height: 420px;}
 .foot{text-align: center; background: rgb(18, 18, 45); color: white; padding: 10px 10px;}
 .foot p{padding-top:415px;}
 
-.hmp1{background-color: rgb(247, 178, 31); color: black; width: 410px;height: 430px; padding-top: 50px; padding-bottom: 100px; display: block;padding-right: 7.5px;}
-.hmp2{background-color: rgb(247, 178, 31); color: black; width: 408px;height: 430px; padding-top: 50px; padding-bottom: 100px; display: block;padding-right: 7.5px; }
-.hmp3{background-color: rgb(247, 178, 31); color: black; width: 406px;height: 430px; padding-top: 50px; padding-bottom: 100px; display: block; }
+.hmp1{background-color: rgb(247, 178, 31); color: black; width: 408px;height: 430px; padding-top: 50px; padding-bottom: 100px; display: block;padding-right: 7.5px;}
+.hmp2{background-color: rgb(247, 178, 31); color: black; width: 415px;height: 430px; padding-top: 50px; padding-bottom: 100px; display: block;padding-right: 7.5px; }
+.hmp3{background-color: rgb(247, 178, 31); color: black; width: 410px;height: 430px; padding-top: 50px; padding-bottom: 100px; display: block; }
 
 .hmp img{padding-right: 25px;}
 .hmp1 p,.hmp2 p,.hmp3 p{border-bottom: 1px solid black;}
@@ -62,7 +62,7 @@ width: 100%;}
 .footup img{ width: 100px; margin-left: 1px; margin-top: 1px; padding-right:120px;}
 .last1{ width: 340px; height: 430px; padding-right: 7px;}
 .last2{width: 332px; height: 430px; padding-right: 7px;}
-.last3{width: 325px; height: 430px;padding-right: 7px;}
+.last3{width: 334px; height: 430px;padding-right: 7px;}
 .last1 p,.last2 p,.last3 p{border-bottom: 1px solid black;}
 .container5{background-color: blue; display: inline-block;}
 .container4{background-color: blue; display: inline-block;}
