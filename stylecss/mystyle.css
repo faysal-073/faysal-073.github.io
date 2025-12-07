@@ -4,12 +4,12 @@
 
 .image32 img{ width: 70px;height: 87px; margin-top: 1px; margin-left: 1px;}
 .menu{min-height: 90px; width: 1248px; background-color: aquamarine; }
-.menu ul{ padding-top: 0px;}
-.menu ul li{list-style-type: none; float: left; position: relative;padding-right: 18px; display: block; text-align: center; }
-
+.menu{ padding-top: 0px;}
+.menu ul li{list-style-type: none; float: left; position: relative;padding-right: 18px; display: block; text-align: center; margin-top: 10px; }
+.menu ul{margin-top: -10px;}
 .menu ul li a{text-decoration:none; padding:25px 20px; display: block; color:black; -webkit-transition: all 0.3s ease; transition: all 0.3s ease;}
 .menu ul li a:hover{color: rgb(235, 12, 9); left: 88px; top: -30px;}
-.menu ul li ul{position: absolute; left: -9999px; background-color: white;}
+.menu ul li ul{position: absolute; left: -9999px; background-color: white; padding: 10px 5px; padding-top: 10px;}
 .menu ul li:hover ul{left: 0px; top: 50px;}
 .menu ul li ul li{position: relative; width: 235px; height: 50px;}
 .menu ul li ul li ul{position: absolute; left: -9999px; display: none;float: left;}
